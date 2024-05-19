@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Omnifood Website is a practice project.">
     
     <!-- for making webpages responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- adding favicons for all platforms -->
+    <!-- 1) for Browser -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- 2) for iOS  -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!-- 3) for Android  -->
+    <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +31,10 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>Omnifood</title>
+
+
+    <script defer src="js/script.js"></script>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
 
   <body>
@@ -32,11 +44,11 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it Works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it Works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -60,10 +72,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer Photo" />
@@ -107,7 +119,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works?</span>
           <h2 class="heading-secondary">
@@ -176,7 +188,7 @@
       </section>
 
       <!-- MEALS SECTION -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -327,7 +339,7 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back!</h2>
@@ -432,7 +444,7 @@
       </section>
 
       <!-- PRICING SECTION -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -554,7 +566,7 @@
       </section>
 
       <!-- CTA Section -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
 
@@ -623,7 +635,7 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2024 by OmniFood Inc. All rights reserved.
+            Copyright &copy; <span class="year">2021</span> by OmniFood Inc. All rights reserved.
           </p>
         </div>
 
